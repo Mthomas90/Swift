@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25ECEC27224D18ED007E3475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC26224D18ED007E3475 /* AppDelegate.swift */; };
+		25ECEC29224D18ED007E3475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC28224D18ED007E3475 /* ViewController.swift */; };
+		25ECEC2C224D18ED007E3475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25ECEC2A224D18ED007E3475 /* Main.storyboard */; };
+		25ECEC2F224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC2D224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld */; };
+		25ECEC31224D18EF007E3475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25ECEC30224D18EF007E3475 /* Assets.xcassets */; };
+		25ECEC34224D18EF007E3475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25ECEC32224D18EF007E3475 /* LaunchScreen.storyboard */; };
+		25ECEC4B224D1EDE007E3475 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC4A224D1EDE007E3475 /* Register.swift */; };
+		25ECEC51224D3205007E3475 /* RegisterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC50224D3205007E3475 /* RegisterTest.swift */; };
+		25ECEC57224D5B98007E3475 /* DiscountRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC56224D5B98007E3475 /* DiscountRate.swift */; };
+		25ECEC59224D5BF2007E3475 /* DiscountRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */; };
+		25ECEC5B224D5C68007E3475 /* StateCodesFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */; };
+		25ECEC5D224D5C88007E3475 /* StateCodesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */; };
+		25ECEC5F224D95F8007E3475 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25ECEC3B224D18EF007E3475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25ECEC1B224D18EC007E3475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25ECEC22224D18ED007E3475;
+			remoteInfo = CashRegisterApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25ECEC23224D18ED007E3475 /* CashRegisterApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashRegisterApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ECEC26224D18ED007E3475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25ECEC28224D18ED007E3475 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		25ECEC2B224D18ED007E3475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		25ECEC2E224D18ED007E3475 /* CashRegisterApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashRegisterApplication.xcdatamodel; sourceTree = "<group>"; };
+		25ECEC30224D18EF007E3475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25ECEC33224D18EF007E3475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25ECEC35224D18EF007E3475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ECEC40224D18EF007E3475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25ECEC4A224D1EDE007E3475 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		25ECEC50224D3205007E3475 /* RegisterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTest.swift; sourceTree = "<group>"; };
+		25ECEC56224D5B98007E3475 /* DiscountRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountRate.swift; sourceTree = "<group>"; };
+		25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountRateTests.swift; sourceTree = "<group>"; };
+		25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCodesFinder.swift; sourceTree = "<group>"; };
+		25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCodesTest.swift; sourceTree = "<group>"; };
+		25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25ECEC20224D18ED007E3475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ECEC37224D18EF007E3475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25ECEC1A224D18EC007E3475 = {
+			isa = PBXGroup;
+			children = (
+				25ECEC25224D18ED007E3475 /* CashRegisterApplication */,
+				25ECEC3D224D18EF007E3475 /* CashRegisterApplicationTests */,
+				25ECEC24224D18ED007E3475 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25ECEC24224D18ED007E3475 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25ECEC23224D18ED007E3475 /* CashRegisterApplication.app */,
+				25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25ECEC25224D18ED007E3475 /* CashRegisterApplication */ = {
+			isa = PBXGroup;
+			children = (
+				25ECEC4A224D1EDE007E3475 /* Register.swift */,
+				25ECEC26224D18ED007E3475 /* AppDelegate.swift */,
+				25ECEC28224D18ED007E3475 /* ViewController.swift */,
+				25ECEC2A224D18ED007E3475 /* Main.storyboard */,
+				25ECEC30224D18EF007E3475 /* Assets.xcassets */,
+				25ECEC32224D18EF007E3475 /* LaunchScreen.storyboard */,
+				25ECEC35224D18EF007E3475 /* Info.plist */,
+				25ECEC2D224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld */,
+				25ECEC56224D5B98007E3475 /* DiscountRate.swift */,
+				25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */,
+				25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */,
+			);
+			path = CashRegisterApplication;
+			sourceTree = "<group>";
+		};
+		25ECEC3D224D18EF007E3475 /* CashRegisterApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				25ECEC40224D18EF007E3475 /* Info.plist */,
+				25ECEC50224D3205007E3475 /* RegisterTest.swift */,
+				25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */,
+				25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */,
+			);
+			path = CashRegisterApplicationTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25ECEC22224D18ED007E3475 /* CashRegisterApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25ECEC43224D18EF007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplication" */;
+			buildPhases = (
+				25ECEC1F224D18ED007E3475 /* Sources */,
+				25ECEC20224D18ED007E3475 /* Frameworks */,
+				25ECEC21224D18ED007E3475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CashRegisterApplication;
+			productName = CashRegisterApplication;
+			productReference = 25ECEC23224D18ED007E3475 /* CashRegisterApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25ECEC39224D18EF007E3475 /* CashRegisterApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25ECEC46224D18EF007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplicationTests" */;
+			buildPhases = (
+				25ECEC36224D18EF007E3475 /* Sources */,
+				25ECEC37224D18EF007E3475 /* Frameworks */,
+				25ECEC38224D18EF007E3475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25ECEC3C224D18EF007E3475 /* PBXTargetDependency */,
+			);
+			name = CashRegisterApplicationTests;
+			productName = CashRegisterApplicationTests;
+			productReference = 25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25ECEC1B224D18EC007E3475 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = 007;
+				TargetAttributes = {
+					25ECEC22224D18ED007E3475 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					25ECEC39224D18EF007E3475 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 25ECEC22224D18ED007E3475;
+					};
+				};
+			};
+			buildConfigurationList = 25ECEC1E224D18EC007E3475 /* Build configuration list for PBXProject "CashRegisterApplication" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25ECEC1A224D18EC007E3475;
+			productRefGroup = 25ECEC24224D18ED007E3475 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25ECEC22224D18ED007E3475 /* CashRegisterApplication */,
+				25ECEC39224D18EF007E3475 /* CashRegisterApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25ECEC21224D18ED007E3475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ECEC34224D18EF007E3475 /* LaunchScreen.storyboard in Resources */,
+				25ECEC31224D18EF007E3475 /* Assets.xcassets in Resources */,
+				25ECEC2C224D18ED007E3475 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ECEC38224D18EF007E3475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25ECEC1F224D18ED007E3475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ECEC29224D18ED007E3475 /* ViewController.swift in Sources */,
+				25ECEC57224D5B98007E3475 /* DiscountRate.swift in Sources */,
+				25ECEC5B224D5C68007E3475 /* StateCodesFinder.swift in Sources */,
+				25ECEC27224D18ED007E3475 /* AppDelegate.swift in Sources */,
+				25ECEC5F224D95F8007E3475 /* ReceiptViewController.swift in Sources */,
+				25ECEC4B224D1EDE007E3475 /* Register.swift in Sources */,
+				25ECEC2F224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ECEC36224D18EF007E3475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ECEC51224D3205007E3475 /* RegisterTest.swift in Sources */,
+				25ECEC59224D5BF2007E3475 /* DiscountRateTests.swift in Sources */,
+				25ECEC5D224D5C88007E3475 /* StateCodesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25ECEC3C224D18EF007E3475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25ECEC22224D18ED007E3475 /* CashRegisterApplication */;
+			targetProxy = 25ECEC3B224D18EF007E3475 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25ECEC2A224D18ED007E3475 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25ECEC2B224D18ED007E3475 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		25ECEC32224D18EF007E3475 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25ECEC33224D18EF007E3475 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25ECEC41224D18EF007E3475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25ECEC42224D18EF007E3475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25ECEC44224D18EF007E3475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25ECEC45224D18EF007E3475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25ECEC47224D18EF007E3475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashRegisterApplication.app/CashRegisterApplication";
+			};
+			name = Debug;
+		};
+		25ECEC48224D18EF007E3475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CashRegisterApplication.app/CashRegisterApplication";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25ECEC1E224D18EC007E3475 /* Build configuration list for PBXProject "CashRegisterApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25ECEC41224D18EF007E3475 /* Debug */,
+				25ECEC42224D18EF007E3475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25ECEC43224D18EF007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25ECEC44224D18EF007E3475 /* Debug */,
+				25ECEC45224D18EF007E3475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25ECEC46224D18EF007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25ECEC47224D18EF007E3475 /* Debug */,
+				25ECEC48224D18EF007E3475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25ECEC2D224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25ECEC2E224D18ED007E3475 /* CashRegisterApplication.xcdatamodel */,
+			);
+			currentVersion = 25ECEC2E224D18ED007E3475 /* CashRegisterApplication.xcdatamodel */;
+			path = CashRegisterApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25ECEC1B224D18EC007E3475 /* Project object */;
+}
