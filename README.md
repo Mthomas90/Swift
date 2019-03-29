@@ -2,8 +2,7 @@
 
 Cash Register Application(Swift)
 
-You can run the application like a normal swift application in Xcode. 
-I added a quick UI to make it easier for you to use the application.
+Hello Welcome to Cash Register Application this is an small receipt/order application written entirely in swift. You can run the application like a normal swift application in Xcode. 
 
 I added 5 more StateCodes that I recieved from the wikipedia link so there are 10 state codes to choose from.
 
