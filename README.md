@@ -2,11 +2,16 @@
 
 Cash Register Application(Swift)
 
-Hello Welcome to Cash Register Application this is an small receipt/order application written entirely in swift. You can run the application like a normal swift application in Xcode. 
+Introduction
 
-I added 5 more StateCodes that I recieved from the wikipedia link so there are 10 state codes to choose from.
+Hello Welcome to Cash Register Application this is an small receipt/order application written entirely in swift.
 
-Tests
+Software Needed
 
-To run the unit tests I provided once you have imported it into your Xcode you can simply run the the tests in the unit test classes.
+To run this application you will need Xcode.
+
+Testing Application
+
+To run the unit tests you simply have to load the application in xcode and go to the unit test classes and press 
+the diamond at the top of the class, this will run the whole test class. Or you can press the triangle next to any of the methods to run that specific test method.
 
