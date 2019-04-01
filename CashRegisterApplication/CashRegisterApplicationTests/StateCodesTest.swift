@@ -13,12 +13,12 @@ class StateCodesTest: XCTestCase {
 
     //Testing if the getPercentage method returns correct percentage
     func testStatesMethod() {
-        let p1 = StateCodesFinder.getPercentage(stateCode: "UT")
-        XCTAssertEqual(p1, 6.85)
-        let p2 = StateCodesFinder.getPercentage(stateCode: "NV")
-        XCTAssertEqual(p2, 8.00)
-        let p3 = StateCodesFinder.getPercentage(stateCode: "TX")
-        XCTAssertEqual(p3, 6.25)
+        let test1 = StateCodesFinder.getPercentage(stateCode: "UT")
+        XCTAssertEqual(test1, 6.85)
+        let test2 = StateCodesFinder.getPercentage(stateCode: "NV")
+        XCTAssertEqual(test2, 8.00)
+        let test3 = StateCodesFinder.getPercentage(stateCode: "TX")
+        XCTAssertEqual(test3, 6.25)
     }
     
     //Testing getPercentage with wrong state code if it returns nil
