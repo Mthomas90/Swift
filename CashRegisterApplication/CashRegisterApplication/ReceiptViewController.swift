@@ -42,7 +42,7 @@ class ReceiptViewController: UIViewController {
     }
     
     //Setting up the labels
-    func setUpLabels() {
+    private func setUpLabels() {
         if receiptArray.count > 0 {
           itemLabel.text = receiptArray["label"]
           fitLabelText(label: itemLabel)
@@ -65,7 +65,7 @@ class ReceiptViewController: UIViewController {
     }
     
     //MARK: Fit all text in label
-    func fitLabelText(label: UILabel) {
+    private func fitLabelText(label: UILabel) {
         label.sizeToFit()
         label.layoutIfNeeded()
     }
