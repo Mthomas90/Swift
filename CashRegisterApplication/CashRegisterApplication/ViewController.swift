@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  CashRegisterApplication
 //
-//  Created by 007 on 28/03/2019.
 //  Copyright © 2019 007. All rights reserved.
 //
 
@@ -35,7 +34,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if itemLabelText.text != nil && quantityText.text != nil && priceText.text != nil && stateCode != nil {
             let register = Register(itemLabel: itemLabelText.text!, quantity: Int(quantityText.text!) ?? 1, price: Double(priceText.text!) ?? 1, state: stateCode.text!)
-            //print(register.receipt)
             if register.receiptArray.count > 1 {
                 let popUpReceipt = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "receipt") as! ReceiptViewController
                 popUpReceipt.receiptArray = register.receiptArray

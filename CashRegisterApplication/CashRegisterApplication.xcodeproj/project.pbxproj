@@ -14,16 +14,26 @@
 		25ECEC31224D18EF007E3475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25ECEC30224D18EF007E3475 /* Assets.xcassets */; };
 		25ECEC34224D18EF007E3475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25ECEC32224D18EF007E3475 /* LaunchScreen.storyboard */; };
 		25ECEC4B224D1EDE007E3475 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC4A224D1EDE007E3475 /* Register.swift */; };
-		25ECEC51224D3205007E3475 /* RegisterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC50224D3205007E3475 /* RegisterTest.swift */; };
 		25ECEC57224D5B98007E3475 /* DiscountRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC56224D5B98007E3475 /* DiscountRate.swift */; };
 		25ECEC59224D5BF2007E3475 /* DiscountRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */; };
 		25ECEC5B224D5C68007E3475 /* StateCodesFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */; };
 		25ECEC5D224D5C88007E3475 /* StateCodesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */; };
 		25ECEC5F224D95F8007E3475 /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */; };
+		25ECEC61225255EA007E3475 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC60225255EA007E3475 /* Calculator.swift */; };
+		25ECEC6322527042007E3475 /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC6222527042007E3475 /* CalculatorTest.swift */; };
+		25ECEC7122535BB5007E3475 /* CashRegisterApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC7022535BB5007E3475 /* CashRegisterApplicationUITests.swift */; };
+		25ECEC7B2253CC0A007E3475 /* RegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ECEC7A2253CC0A007E3475 /* RegisterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		25ECEC3B224D18EF007E3475 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25ECEC1B224D18EC007E3475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25ECEC22224D18ED007E3475;
+			remoteInfo = CashRegisterApplication;
+		};
+		25ECEC7322535BB5007E3475 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 25ECEC1B224D18EC007E3475 /* Project object */;
 			proxyType = 1;
@@ -44,12 +54,17 @@
 		25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25ECEC40224D18EF007E3475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25ECEC4A224D1EDE007E3475 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		25ECEC50224D3205007E3475 /* RegisterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTest.swift; sourceTree = "<group>"; };
 		25ECEC56224D5B98007E3475 /* DiscountRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountRate.swift; sourceTree = "<group>"; };
 		25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountRateTests.swift; sourceTree = "<group>"; };
 		25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCodesFinder.swift; sourceTree = "<group>"; };
 		25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateCodesTest.swift; sourceTree = "<group>"; };
 		25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		25ECEC60225255EA007E3475 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		25ECEC6222527042007E3475 /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
+		25ECEC6E22535BB5007E3475 /* CashRegisterApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashRegisterApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ECEC7022535BB5007E3475 /* CashRegisterApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashRegisterApplicationUITests.swift; sourceTree = "<group>"; };
+		25ECEC7222535BB5007E3475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25ECEC7A2253CC0A007E3475 /* RegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25ECEC6B22535BB5007E3475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +97,7 @@
 			children = (
 				25ECEC25224D18ED007E3475 /* CashRegisterApplication */,
 				25ECEC3D224D18EF007E3475 /* CashRegisterApplicationTests */,
+				25ECEC6F22535BB5007E3475 /* CashRegisterApplicationUITests */,
 				25ECEC24224D18ED007E3475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +107,7 @@
 			children = (
 				25ECEC23224D18ED007E3475 /* CashRegisterApplication.app */,
 				25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */,
+				25ECEC6E22535BB5007E3475 /* CashRegisterApplicationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +126,7 @@
 				25ECEC56224D5B98007E3475 /* DiscountRate.swift */,
 				25ECEC5A224D5C68007E3475 /* StateCodesFinder.swift */,
 				25ECEC5E224D95F8007E3475 /* ReceiptViewController.swift */,
+				25ECEC60225255EA007E3475 /* Calculator.swift */,
 			);
 			path = CashRegisterApplication;
 			sourceTree = "<group>";
@@ -110,11 +135,21 @@
 			isa = PBXGroup;
 			children = (
 				25ECEC40224D18EF007E3475 /* Info.plist */,
-				25ECEC50224D3205007E3475 /* RegisterTest.swift */,
 				25ECEC58224D5BF2007E3475 /* DiscountRateTests.swift */,
 				25ECEC5C224D5C88007E3475 /* StateCodesTest.swift */,
+				25ECEC6222527042007E3475 /* CalculatorTest.swift */,
+				25ECEC7A2253CC0A007E3475 /* RegisterTests.swift */,
 			);
 			path = CashRegisterApplicationTests;
+			sourceTree = "<group>";
+		};
+		25ECEC6F22535BB5007E3475 /* CashRegisterApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25ECEC7022535BB5007E3475 /* CashRegisterApplicationUITests.swift */,
+				25ECEC7222535BB5007E3475 /* Info.plist */,
+			);
+			path = CashRegisterApplicationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +190,24 @@
 			productReference = 25ECEC3A224D18EF007E3475 /* CashRegisterApplicationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		25ECEC6D22535BB5007E3475 /* CashRegisterApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25ECEC7522535BB5007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplicationUITests" */;
+			buildPhases = (
+				25ECEC6A22535BB5007E3475 /* Sources */,
+				25ECEC6B22535BB5007E3475 /* Frameworks */,
+				25ECEC6C22535BB5007E3475 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25ECEC7422535BB5007E3475 /* PBXTargetDependency */,
+			);
+			name = CashRegisterApplicationUITests;
+			productName = CashRegisterApplicationUITests;
+			productReference = 25ECEC6E22535BB5007E3475 /* CashRegisterApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +222,10 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					25ECEC39224D18EF007E3475 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 25ECEC22224D18ED007E3475;
+					};
+					25ECEC6D22535BB5007E3475 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 25ECEC22224D18ED007E3475;
 					};
@@ -189,6 +246,7 @@
 			targets = (
 				25ECEC22224D18ED007E3475 /* CashRegisterApplication */,
 				25ECEC39224D18EF007E3475 /* CashRegisterApplicationTests */,
+				25ECEC6D22535BB5007E3475 /* CashRegisterApplicationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +269,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25ECEC6C22535BB5007E3475 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -223,6 +288,7 @@
 				25ECEC5B224D5C68007E3475 /* StateCodesFinder.swift in Sources */,
 				25ECEC27224D18ED007E3475 /* AppDelegate.swift in Sources */,
 				25ECEC5F224D95F8007E3475 /* ReceiptViewController.swift in Sources */,
+				25ECEC61225255EA007E3475 /* Calculator.swift in Sources */,
 				25ECEC4B224D1EDE007E3475 /* Register.swift in Sources */,
 				25ECEC2F224D18ED007E3475 /* CashRegisterApplication.xcdatamodeld in Sources */,
 			);
@@ -232,9 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25ECEC51224D3205007E3475 /* RegisterTest.swift in Sources */,
+				25ECEC6322527042007E3475 /* CalculatorTest.swift in Sources */,
 				25ECEC59224D5BF2007E3475 /* DiscountRateTests.swift in Sources */,
+				25ECEC7B2253CC0A007E3475 /* RegisterTests.swift in Sources */,
 				25ECEC5D224D5C88007E3475 /* StateCodesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ECEC6A22535BB5007E3475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ECEC7122535BB5007E3475 /* CashRegisterApplicationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +320,11 @@
 			isa = PBXTargetDependency;
 			target = 25ECEC22224D18ED007E3475 /* CashRegisterApplication */;
 			targetProxy = 25ECEC3B224D18EF007E3475 /* PBXContainerItemProxy */;
+		};
+		25ECEC7422535BB5007E3475 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25ECEC22224D18ED007E3475 /* CashRegisterApplication */;
+			targetProxy = 25ECEC7322535BB5007E3475 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -391,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y89GPRF2C4;
 				INFOPLIST_FILE = CashRegisterApplication/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y89GPRF2C4;
 				INFOPLIST_FILE = CashRegisterApplication/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +544,44 @@
 			};
 			name = Release;
 		};
+		25ECEC7622535BB5007E3475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashRegisterApplication;
+			};
+			name = Debug;
+		};
+		25ECEC7722535BB5007E3475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y89GPRF2C4;
+				INFOPLIST_FILE = CashRegisterApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cash.CashRegisterApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CashRegisterApplication;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +608,15 @@
 			buildConfigurations = (
 				25ECEC47224D18EF007E3475 /* Debug */,
 				25ECEC48224D18EF007E3475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25ECEC7522535BB5007E3475 /* Build configuration list for PBXNativeTarget "CashRegisterApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25ECEC7622535BB5007E3475 /* Debug */,
+				25ECEC7722535BB5007E3475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

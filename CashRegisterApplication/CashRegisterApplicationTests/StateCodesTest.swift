@@ -2,7 +2,6 @@
 //  StateCodesTest.swift
 //  CashRegisterApplicationTests
 //
-//  Created by 007 on 28/03/2019.
 //  Copyright © 2019 007. All rights reserved.
 //
 

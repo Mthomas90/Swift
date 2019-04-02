@@ -2,13 +2,11 @@
 //  Register.swift
 //  CashRegisterApplication
 //
-//  Created by 007 on 28/03/2019.
 //  Copyright © 2019 007. All rights reserved.
 //
 
 import Foundation
 
-//Makesure u have error catchers if its nill or empty
 class Register {
     
     private var itemLabel = String()
@@ -31,45 +29,35 @@ class Register {
         }
     }
     
-    
     init(itemLabel: String, quantity: Int, price: Double, state: String) {
         self.itemLabel = itemLabel
         self.quantityOfItem = quantity
         self.priceOfItem = price
         self.stateCode = state
-        calculateTotalPrice(quant: self.quantityOfItem, price: self.priceOfItem)
-        calculateTax(sc: self.stateCode)
+        self.totalWithoutTax = Calculator.calculateTotalPrice(quant: self.quantityOfItem, price: self.priceOfItem)
+        calculateTax(value: Calculator.calculateTax(stateCode: self.stateCode, totalPrice: self.totalWithoutTax))
     }
     
-    //Calculating the total price
-    func calculateTotalPrice(quant: Int, price: Double) {
-        self.totalWithoutTax = Double(quantityOfItem) * priceOfItem
-    }
-    
-    //Calculating the tax amount to pay
-    func calculateTax(sc: String) {
-        
-        if let value = StateCodesFinder.getPercentage(stateCode: sc) {
-            self.taxPercent = value
-            self.taxAmount = totalWithoutTax * taxPercent / 100
-            calculateDiscount(tp: totalWithoutTax)
+    //Calculating the tax amount
+    private func calculateTax(value: (Double,Double)) {
+        if value.0 != 0.0 {
+            self.taxPercent = value.0
+            self.taxAmount = value.1
+            calDiscount(dis: Calculator.calculateDiscount(totalPrice: totalWithoutTax))
         } else {
-            print("Status code doesnt exist!")
+            print("Status code doesn't exist!!")
         }
     }
     
-    //Calculating discount amount owed
-    func calculateDiscount(tp: Double) {
-        let value = DiscountRate.getDiscountRate(total: tp)
-        self.disPercent = value
-        if value > 0.0 {
-            self.discount = tp * value / 100
+    //Calculating the discount
+    private func calDiscount(dis: (Double, Double)) {
+        self.disPercent = dis.0
+        if disPercent > 0.0 {
+            self.discount = dis.1
         } else {
             self.discount = 0.0
         }
-        
         self.totalPrice = totalWithoutTax - discount + taxAmount
-        
         receiptArray["label"] = self.itemLabel
         receiptArray["quantity"] = "\(self.quantityOfItem)"
         receiptArray["price"] = "\(self.priceOfItem)"
@@ -79,10 +67,7 @@ class Register {
         receiptArray["discount"] = "\(self.discount)"
         receiptArray["taxpercent"] = "\(self.taxPercent)"
         receiptArray["taxamount"] = "\(self.taxAmount)"
-        //print(receipt)
-       
     }
-    
     
     //Getters for testing purposes
     func getTaxAmount() -> Double{

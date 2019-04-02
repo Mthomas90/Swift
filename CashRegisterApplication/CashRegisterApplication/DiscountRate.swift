@@ -2,14 +2,14 @@
 //  DiscountRate.swift
 //  CashRegisterApplication
 //
-//  Created by 007 on 28/03/2019.
 //  Copyright © 2019 007. All rights reserved.
 //
 
 import Foundation
 
-class DiscountRate {
-    
+//I was going to refactor the getDiscountRate but I decided not to
+//Due to the fact I wont be increase the amounts of discount rates.(finite)
+struct DiscountRate {
     static func getDiscountRate(total: Double)-> Double {
         if total < 1000 {
             return 0.0
@@ -24,6 +24,6 @@ class DiscountRate {
         } else {
             return 15.0
         }
-        
     }
+    
 }
