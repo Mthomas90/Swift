@@ -1,7 +1,6 @@
 //
 //  AppDelegate.swift
 //  CashRegisterApplication
-//
 //  Copyright © 2019 007. All rights reserved.
 //
 

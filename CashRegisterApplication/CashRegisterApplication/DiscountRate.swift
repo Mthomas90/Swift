@@ -1,7 +1,6 @@
 //
 //  DiscountRate.swift
 //  CashRegisterApplication
-//
 //  Copyright © 2019 007. All rights reserved.
 //
 
@@ -9,8 +8,9 @@ import Foundation
 
 //I was going to refactor the getDiscountRate but I decided not to
 //Due to the fact I wont be increase the amounts of discount rates.(finite)
+
 struct DiscountRate {
-    static func getDiscountRate(total: Double)-> Double {
+    static func getDiscountRate(total: Double) -> Double {
         if total < 1000 {
             return 0.0
         } else if (total >= 1000 && total < 5000) {

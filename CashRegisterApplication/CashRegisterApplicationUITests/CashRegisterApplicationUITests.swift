@@ -77,14 +77,8 @@ class CashRegisterApplicationUITests: XCTestCase {
         stateTextField.tap()
         stateTextField.typeText("UT")
         
-        
         let orderButton = app.buttons["Order"]
         orderButton.tap()
-        
-        /*let returnButton = app.buttons["Return"]
-        returnButton.tap()*/
-        
-        //Popup View controller: Receipt view controller tests
         
         let labelOfItemsLabel = app.staticTexts["Label1"]
         XCTAssertEqual(labelOfItemsLabel.label, "test: Trainer")
@@ -111,6 +105,8 @@ class CashRegisterApplicationUITests: XCTestCase {
         let totalPriceLabelBottom = app.staticTexts["Tp"]
         XCTAssertEqual(totalPriceLabelBottom.label, "3115.5")
         
+        let returnButton = app.buttons["Return"]
+        returnButton.tap()
         
         let closeButton = app.buttons["Close"]
         XCTAssertTrue(closeButton.isEnabled)

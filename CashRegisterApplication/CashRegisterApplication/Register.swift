@@ -34,7 +34,7 @@ class Register {
         self.quantityOfItem = quantity
         self.priceOfItem = price
         self.stateCode = state
-        self.totalWithoutTax = Calculator.calculateTotalPrice(quant: self.quantityOfItem, price: self.priceOfItem)
+        self.totalWithoutTax = Calculator.calculateTotalPrice(self.quantityOfItem,self.priceOfItem)
         calculateTax(value: Calculator.calculateTax(stateCode: self.stateCode, totalPrice: self.totalWithoutTax))
     }
     
@@ -43,14 +43,14 @@ class Register {
         if value.0 != 0.0 {
             self.taxPercent = value.0
             self.taxAmount = value.1
-            calDiscount(dis: Calculator.calculateDiscount(totalPrice: totalWithoutTax))
+            calculateDiscount(dis: Calculator.calculateDiscount(totalPrice: totalWithoutTax))
         } else {
             print("Status code doesn't exist!!")
         }
     }
     
     //Calculating the discount
-    private func calDiscount(dis: (Double, Double)) {
+    private func calculateDiscount(dis: (Double, Double)) {
         self.disPercent = dis.0
         if disPercent > 0.0 {
             self.discount = dis.1

@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  CashRegisterApplication
-//
 //  Copyright © 2019 007. All rights reserved.
 //
 
@@ -9,18 +8,19 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var itemLabelText: UITextField!
-    @IBOutlet weak var quantityText: UITextField!{didSet { quantityText.addDoneCancelToolbar()}}
-    @IBOutlet weak var priceText: UITextField!{didSet { priceText.addDoneCancelToolbar()}}
-    @IBOutlet weak var stateCode: UITextField!
+    @IBOutlet weak var itemLabel: UITextField!
+    @IBOutlet weak var quantityLabel: UITextField!{ didSet { quantityLabel.addDoneCancelToolbar()}}
+    @IBOutlet weak var priceLabel: UITextField!{ didSet { priceLabel.addDoneCancelToolbar()}}
+    @IBOutlet weak var stateCodeLabel: UITextField!
     @IBOutlet weak var orderButton: UIButton!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemLabelText.delegate = self
-        quantityText.delegate = self
-        priceText.delegate = self
-        stateCode.delegate = self
+        itemLabel.delegate = self
+        quantityLabel.delegate = self
+        priceLabel.delegate = self
+        stateCodeLabel.delegate = self
         orderButton.layer.cornerRadius = 10
     }
 
@@ -29,11 +29,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    //Mark: BUTTON ACTION METHODS
+    //MARK: BUTTON ACTION METHODS
     @IBAction func orderButton(_ sender: UIButton) {
-        
-        if itemLabelText.text != nil && quantityText.text != nil && priceText.text != nil && stateCode != nil {
-            let register = Register(itemLabel: itemLabelText.text!, quantity: Int(quantityText.text!) ?? 1, price: Double(priceText.text!) ?? 1, state: stateCode.text!)
+       
+        if itemLabel.text != nil && quantityLabel.text != nil && priceLabel.text != nil && stateCodeLabel != nil {
+            let register = Register(itemLabel: itemLabel.text!, quantity: Int(quantityLabel.text!) ?? 1, price: Double(priceLabel.text!) ?? 1, state: stateCodeLabel.text!)
             if register.receiptArray.count > 1 {
                 let popUpReceipt = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "receipt") as! ReceiptViewController
                 popUpReceipt.receiptArray = register.receiptArray
@@ -41,12 +41,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 popUpReceipt.view.frame = self.view.frame
                 self.view.addSubview(popUpReceipt.view)
                 popUpReceipt.willMove(toParent: self)
-                
             }
+        } else {
+            print("Labels can not be empty!!")
         }
     }
-
-    //POPUP FOR THE RECEIPT
 }
 
 //Extension to add done and cancel options to the numberpad

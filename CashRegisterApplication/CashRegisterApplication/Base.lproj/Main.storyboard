@@ -85,11 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="itemLabelText" destination="vog-1O-k8x" id="bc1-NW-YDe"/>
+                        <outlet property="itemLabel" destination="vog-1O-k8x" id="fga-59-cdT"/>
                         <outlet property="orderButton" destination="leY-LC-sEL" id="DyY-ZO-o3o"/>
-                        <outlet property="priceText" destination="I6Y-QC-PPm" id="exj-vy-tNJ"/>
-                        <outlet property="quantityText" destination="Oqc-dZ-dD4" id="EVM-tT-jeP"/>
-                        <outlet property="stateCode" destination="jkY-bb-c26" id="4cd-bj-Ts6"/>
+                        <outlet property="priceLabel" destination="I6Y-QC-PPm" id="7hW-hX-MaV"/>
+                        <outlet property="quantityLabel" destination="Oqc-dZ-dD4" id="h8h-pO-ZvI"/>
+                        <outlet property="stateCodeLabel" destination="jkY-bb-c26" id="Psp-0W-LF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

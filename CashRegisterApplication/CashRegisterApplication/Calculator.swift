@@ -10,9 +10,7 @@ import Foundation
 struct Calculator {
     
     //calculating total price
-    static func calculateTotalPrice(quant: Int, price: Double) -> Double {
-        return Double(quant) * price
-    }
+    static let calculateTotalPrice:(Int , Double) -> Double = { Double($0) * $1 }
     
     //calculating tax and amount
     static func calculateTax(stateCode: String, totalPrice: Double) -> (Double,Double) {

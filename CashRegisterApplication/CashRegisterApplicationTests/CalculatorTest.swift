@@ -12,10 +12,10 @@ class CalculatorTest: XCTestCase {
     
     //Tests the total price method
     func testTotalPrice() {
-        XCTAssertEqual(Calculator.calculateTotalPrice(quant: 10, price: 40), 400)
-        XCTAssertEqual(Calculator.calculateTotalPrice(quant: 20, price: 50), 1000)
-        XCTAssertEqual(Calculator.calculateTotalPrice(quant: 70, price: 900), 63000)
-        XCTAssertEqual(Calculator.calculateTotalPrice(quant: 35, price: 700), 24500)
+        XCTAssertEqual(Calculator.calculateTotalPrice(10, 40), 400)
+        XCTAssertEqual(Calculator.calculateTotalPrice(20, 50), 1000)
+        XCTAssertEqual(Calculator.calculateTotalPrice(70, 900), 63000)
+        XCTAssertEqual(Calculator.calculateTotalPrice(35, 700), 24500)
     }
     
     //Tests the calculate tax method
