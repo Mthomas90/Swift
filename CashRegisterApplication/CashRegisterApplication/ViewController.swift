@@ -9,10 +9,16 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var itemLabel: UITextField!
-    @IBOutlet weak var quantityLabel: UITextField!{ didSet { quantityLabel.addDoneCancelToolbar()}}
-    @IBOutlet weak var priceLabel: UITextField!{ didSet { priceLabel.addDoneCancelToolbar()}}
     @IBOutlet weak var stateCodeLabel: UITextField!
     @IBOutlet weak var orderButton: UIButton!
+    @IBOutlet weak var quantityLabel: UITextField!{
+        didSet {
+            quantityLabel.addDoneCancelToolbar()
+        }}
+    @IBOutlet weak var priceLabel: UITextField!{
+        didSet {
+            priceLabel.addDoneCancelToolbar()
+        }}
   
     
     override func viewDidLoad() {
@@ -24,7 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         orderButton.layer.cornerRadius = 10
     }
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

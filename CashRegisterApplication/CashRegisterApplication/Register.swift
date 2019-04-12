@@ -9,10 +9,10 @@ import Foundation
 
 class Register {
     
-    private var itemLabel = String()
-    private var quantityOfItem = Int()
-    private var priceOfItem = Double()
-    private var stateCode = String()
+    private var itemLabel: String
+    private var quantityOfItem: Int
+    private var priceOfItem: Double
+    private var stateCode: String
     
     private var discount = Double()
     private var totalPrice = Double()
@@ -22,11 +22,14 @@ class Register {
     private var taxPercent = Double()
     private var taxAmount = Double()
     
-    var receiptArray = [String: String]()
+    var receiptArray: [String: String] = [:]
     var receipt: [String:String] {
         get {
             return receiptArray
         }
+    }
+    var calculateTotalPrice: Double {
+        return Double(quantityOfItem) * priceOfItem
     }
     
     init(itemLabel: String, quantity: Int, price: Double, state: String) {
@@ -34,15 +37,15 @@ class Register {
         self.quantityOfItem = quantity
         self.priceOfItem = price
         self.stateCode = state
-        self.totalWithoutTax = Calculator.calculateTotalPrice(self.quantityOfItem,self.priceOfItem)
-        calculateTax(value: Calculator.calculateTax(stateCode: self.stateCode, totalPrice: self.totalWithoutTax))
+        self.totalWithoutTax = calculateTotalPrice
+        calculateTax(value: Calculator.calculateTax(stateCode: stateCode, totalPrice: totalWithoutTax))
     }
     
     //Calculating the tax amount
     private func calculateTax(value: (Double,Double)) {
         if value.0 != 0.0 {
-            self.taxPercent = value.0
-            self.taxAmount = value.1
+            taxPercent = value.0
+            taxAmount = value.1
             calculateDiscount(dis: Calculator.calculateDiscount(totalPrice: totalWithoutTax))
         } else {
             print("Status code doesn't exist!!")
@@ -53,20 +56,20 @@ class Register {
     private func calculateDiscount(dis: (Double, Double)) {
         self.disPercent = dis.0
         if disPercent > 0.0 {
-            self.discount = dis.1
+            discount = dis.1
         } else {
-            self.discount = 0.0
+            discount = 0.0
         }
-        self.totalPrice = totalWithoutTax - discount + taxAmount
-        receiptArray["label"] = self.itemLabel
-        receiptArray["quantity"] = "\(self.quantityOfItem)"
-        receiptArray["price"] = "\(self.priceOfItem)"
-        receiptArray["total"] = "\(self.totalPrice)"
-        receiptArray["totalnotax"] = "\(self.totalWithoutTax)"
-        receiptArray["dispercent"] = "\(self.disPercent)"
-        receiptArray["discount"] = "\(self.discount)"
-        receiptArray["taxpercent"] = "\(self.taxPercent)"
-        receiptArray["taxamount"] = "\(self.taxAmount)"
+        totalPrice = totalWithoutTax - discount + taxAmount
+        receiptArray["label"] = itemLabel
+        receiptArray["quantity"] = "\(quantityOfItem)"
+        receiptArray["price"] = "\(priceOfItem)"
+        receiptArray["total"] = "\(totalPrice)"
+        receiptArray["totalnotax"] = "\(totalWithoutTax)"
+        receiptArray["dispercent"] = "\(disPercent)"
+        receiptArray["discount"] = "\(discount)"
+        receiptArray["taxpercent"] = "\(taxPercent)"
+        receiptArray["taxamount"] = "\(taxAmount)"
     }
     
     //Getters for testing purposes
