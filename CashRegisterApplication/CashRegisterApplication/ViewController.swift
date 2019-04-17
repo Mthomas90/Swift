@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: BUTTON ACTION METHODS
     @IBAction func orderButton(_ sender: UIButton) {
-       
+        
         if itemLabel.text != nil && quantityLabel.text != nil && priceLabel.text != nil && stateCodeLabel != nil {
             let register = Register(itemLabel: itemLabel.text!, quantity: Int(quantityLabel.text!) ?? 1, price: Double(priceLabel.text!) ?? 1, state: stateCodeLabel.text!)
             if register.receiptArray.count > 1 {
